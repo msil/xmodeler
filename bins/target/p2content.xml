@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='com.ceteva.xmf' version='2.0.0'>
+    <update id='com.ceteva.xmf' range='[0.0.0,2.0.0)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='XMF Plug-in'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Ceteva'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='com.ceteva'/>
+      <property name='maven-artifactId' value='com.ceteva.xmf'/>
+      <property name='maven-version' value='2.0.0'/>
+    </properties>
+    <provides size='12'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='com.ceteva.xmf' version='2.0.0'/>
+      <provided namespace='osgi.bundle' name='com.ceteva.xmf' version='2.0.0'/>
+      <provided namespace='java.package' name='Database' version='0.0.0'/>
+      <provided namespace='java.package' name='Engine' version='0.0.0'/>
+      <provided namespace='java.package' name='Engine.Undo' version='0.0.0'/>
+      <provided namespace='java.package' name='IO' version='0.0.0'/>
+      <provided namespace='java.package' name='Mosaic' version='0.0.0'/>
+      <provided namespace='java.package' name='Values' version='0.0.0'/>
+      <provided namespace='java.package' name='XML' version='0.0.0'/>
+      <provided namespace='java.package' name='XOS' version='0.0.0'/>
+      <provided namespace='java.package' name='xjava' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='7'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='com.ceteva.consoleInterface' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='com.ceteva.console' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='com.ceteva.xmf' version='2.0.0'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='2'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: com.ceteva.xmf;singleton:=true&#xA;Bundle-Version: 2.0.0&#xA;
+        </instruction>
+        <instruction key='zipped'>
+          true
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

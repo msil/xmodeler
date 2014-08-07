@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: Database,Engine,Engine.Undo,IO,Mosaic,Values,XML,XOS,x
+ java
+Eclipse-AutoStart: true
+Bundle-ClassPath: .,Database/mysql-connector-java-3.1.13-bin.jar
+Eclipse-BundleShape: dir
+Bundle-Name: XMF Plug-in
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.ui,org.eclipse.he
+ lp,org.eclipse.emf.ecore,org.eclipse.emf,com.ceteva.consoleInterface,
+ com.ceteva.console
+Bundle-Vendor: Ceteva
+Bundle-Version: 2.0.0
+Bundle-ManifestVersion: 2
+Bundle-Activator: Mosaic.XmfPlugin
+Bundle-SymbolicName: com.ceteva.xmf;singleton:=true
+
